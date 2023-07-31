@@ -1,0 +1,42 @@
+/*eleição*/
+     candidate_x = 889,
+     candidate_y = 847,
+     candidate_z = 515,
+     white = 0,
+
+    window.alert(`INICIANDO A ELEIÇÃO...`)
+    window.alert(`ESCOLHA UM DOS CANDIDATOS A SEGUIR:`)
+    vote = window.prompt(`[1] candidato X,  [2] candidato y,  [3] candidato z,  [4] branco/nulo`)
+    console.log(vote)
+    if (vote == 1){
+        candidate_x++;
+
+    } else if (vote == 2){
+        candidate_y++;
+    
+    }else if (vote == 3){
+       candidate_z++;
+
+    }else if (vote >= 4 || vote == " "){
+        white++;
+        window.alert(`OBRIGADO POR VOTAR!`)
+
+    }else if(vote == String(voto)){
+        window.alert(`VOTE NOVAMENTE!`)
+    }
+    /*VENCEDOR e pontuação dos demais */
+
+    if (candidate_x > candidate_y && candidate_x > candidate_z && candidate_x > white) {
+        winner = candidate_x
+        console.log(`O vencedor é o Candidato X, com ${candidate_x} votos.`)
+    }else if (winner < candidate_y) {
+        winner = candidate_y
+        console.log(`O vencedor é o Candidato Y, com ${candidate_y} votos`)
+
+    }else if (winner < candidate_z){
+        winner = candidate_z
+        console.log(`O vencedor é o Candidato Z, com ${candidate_z} votos`)
+    }
+    window.alert("O SEU VOTO FOI CANTABILIZADO, OBRIGADO!")
+    console.log(`Pontuação total: candidato x com ${candidate_x} pontos, candidato y com ${candidate_y} pontos;  candidato z com ${candidate_z} pontos; voto nulo ou branco ${white} pontos. `)
+    
