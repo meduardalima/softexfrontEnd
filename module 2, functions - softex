@@ -1,0 +1,13 @@
+function current_age (name, birth_year, error){
+    if (birth_year < 1992 || birth_year > 2022 || birth_year == null){
+        console.log("Digite o seu nome:");
+        console.log("Em que ano você nasceu?");
+        return error;
+    }else {
+        current_age = 2023 - birth_year;
+        console.log(`Você completou, ou completará ${current_age} anos esse ano.`)
+        return current_age
+    }
+}
+let myanswer = current_age("maria eduarda lima", 2001)
+console.log(myanswer)
