@@ -1,0 +1,47 @@
+//Você deve criar três listas em JavaScript:
+//1. para guardar os nomes de dez pessoas;
+//2. para guardar as suas idades;
+//3. para guardar as suas cores favoritas.
+//Em seguida, imprima essas listas. Depois, faça algumas modificações, alterando uma cor e uma idade. Ao terminar, imprima novamente todas as informações das três listas
+
+let list = [
+  (name_ = "nome1"),
+  "nome2",
+  "nome3",
+  "nome4",
+  "nome5",
+  "nome6",
+  "nome7",
+  "nome8",
+  "nome9",
+  "nome10",
+
+  (age = 1),
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+
+  (color = "color1"),
+  "color2",
+  "color3",
+  "color4",
+  "color5",
+  "color6",
+  "color7",
+  "color8",
+  "color9",
+  "color10",
+];
+console.log(list);
+
+list.splice(21, 0, "azul");
+console.log(list);
+
+list.splice(13, 0, 23);
+console.log(list);
