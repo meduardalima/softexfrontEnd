@@ -2,8 +2,8 @@
 //Cada linha deve representar um animal e cada coluna terá as diferentes informações sobre ele, como nome, espécie e idade
 
 let animal = [
-  (dog = ["Kadú", "pinscher", 2]),
-  (cat = ["Duda", "persa", 3]),
-  (bird = ["Alice", "arara", 1]),
+  (dog = ["Kadú", "mamífero", 2]),
+  (cat = ["Duda", "mamífero", 3]),
+  (bird = ["Alice", "ave", 1]),
 ];
 console.log(animal);
