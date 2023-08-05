@@ -1,0 +1,35 @@
+//Considere o array [3, 7, 9, 1, 0].
+
+//O primeiro elemento inserido foi o 3, o segundo foi o 7 e assim por diante, seguindo a ordem.
+
+//Levando em conta as três estruturas de dados (fila, lista e pilha) e as suas regras de operações, qual seria a sequência dos números removidos em cada uma delas para esvaziá-las completamente utilizando o array mencionado?
+
+const array = [3, 7, 9, 1, 0];
+console.log(array);
+//desenfileirando com a estrutura FILA
+array.shift();
+console.log(array); //imprime: [7,9,1,0]
+array.shift();
+console.log(array); //imprime: [9,1,0]. a sequência dos numeros removidos com a estrutura fila seria da esquerda para direita*/
+
+//removendo com a estrutura LISTA
+function remover(elemento) {
+  const indice = array.indexOf(elemento);
+  if (indice !== -1) {
+    array.splice(indice, 1);
+    return true;
+  } else {
+    return false;
+  }
+}
+remover(3);
+console.log(array); //imprime [7, 9, 1, 0]
+remover(1);
+console.log(array); //imprime [7, 9, 0] */
+
+//removendo com a estrutura  PILHA
+
+array.pop(); //no caso da estrutura pilha, ela remove da direita para a esquerda
+console.log(array); //imprime [3, 7, 9, 1]
+array.pop();
+console.log(array); //imprime [3, 7, 9]
