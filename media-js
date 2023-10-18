@@ -1,0 +1,9 @@
+const nota1 = prompt("digite a primeira nota: ");
+nota1 = parseFloat.nota1;
+const nota2 = prompt("digite a segunda nota: ");
+nota2 = parseFloat.nota2;
+const nota3 = prompt("digite a terceira nota: ");
+nota3 = parseFloat.nota3;
+let soma = nota1 + nota2 + nota3;
+let media = soma / 3;
+console.log(`a média das três notas foi ${media}`);
