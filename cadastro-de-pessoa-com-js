@@ -1,0 +1,16 @@
+let nome = prompt("digite o seu nome: ").toString;
+console.log(nome);
+
+let salario = prompt("digite o seu salário: R$");
+console.log(parseFloat(salario));
+
+let idade = prompt("qual a sua idade?");
+console.log(parseInt(idade));
+
+let diploma = prompt("você possui diploma? S/N").toUpperCase;
+
+if (diploma == "S") {
+  console.log(true);
+} else {
+  console.log(false);
+}
